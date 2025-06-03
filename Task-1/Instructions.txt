@@ -1,0 +1,3 @@
+Your task it to make sure that build.sh should be in working state.
+
+During this assignment please list down all the code error and fixes. 

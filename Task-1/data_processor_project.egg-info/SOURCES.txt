@@ -1,0 +1,9 @@
+setup.py
+data_handlers/__init__.py
+data_handlers/processor.py
+data_processor_project.egg-info/PKG-INFO
+data_processor_project.egg-info/SOURCES.txt
+data_processor_project.egg-info/dependency_links.txt
+data_processor_project.egg-info/entry_points.txt
+data_processor_project.egg-info/requires.txt
+data_processor_project.egg-info/top_level.txt
