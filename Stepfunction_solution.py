@@ -50,7 +50,6 @@ def get_iam_role_arn(role_name, account_id):
 def create_step_function(account_id, region, sf_role_arn):
     """Creates or updates an AWS Step Functions state machine."""
     client = boto3.client('stepfunctions', region_name=region)
-    # Using the name from your traceback for consistency
     state_machine_name = 'Numerix-CICD-Orchestrator-Test'
 
     definition = {
