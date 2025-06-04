@@ -53,7 +53,6 @@ def create_step_function(account_id, region, sf_role_arn):
     # Using the name from your traceback for consistency
     state_machine_name = 'Numerix-CICD-Orchestrator-Test'
 
-    # Define state machine definition (Step3 Resource fixed in previous iterations)
     definition = {
         "Comment": "A simple AWS Step Functions state machine example",
         "StartAt": "Step1",
@@ -130,7 +129,7 @@ def create_step_function(account_id, region, sf_role_arn):
 def setup_codepipeline(account_id, region, cp_role_arn, s3_artifact_bucket_name):
     """Creates or updates an AWS CodePipeline."""
     client = boto3.client('codepipeline', region_name=region)
-    pipeline_name = 'Numerix-test'  # Default pipeline name
+    pipeline_name = 'Numerix-test'
 
     pipeline = {
         'name': pipeline_name,
