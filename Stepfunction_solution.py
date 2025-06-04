@@ -137,7 +137,6 @@ def setup_codepipeline(account_id, region, cp_role_arn, s3_artifact_bucket_name)
         'roleArn': cp_role_arn,
         'artifactStore': {
             'type': 'S3',
-            # This bucket must pre-exist and be correctly configured
             'location': s3_artifact_bucket_name
         },
         'stages': [
